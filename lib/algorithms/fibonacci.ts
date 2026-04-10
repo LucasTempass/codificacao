@@ -71,5 +71,5 @@ function encodeFibonacciInt(n: number): string {
             remaining -= fibs[i];
         }
     }
-    return bits.join("") + "1"; // terminator bit → last bit always creates "11"
+    return bits.join("") + "1";
 }

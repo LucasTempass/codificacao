@@ -1,7 +1,7 @@
 import {getCharacterCodes} from "@/lib/algorithms/utils";
 
-const GOLOMB_K = 4;
-const GOLOMB_REMAINDER_BITS = 2; // log2(4)
+const GOLOMB_K = 32;
+const GOLOMB_REMAINDER_BITS = 5; // log2(32)
 
 function encodeGolombInt(n: number): string {
     const q = Math.floor(n / GOLOMB_K);
